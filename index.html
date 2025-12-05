@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>ND AI 4-Year Planner</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="page">
+        <header class="nav">
+            <div class="nav-left">
+                <img src="nd_logo.png" class="nd-logo" alt="Notre Dame Logo" />
+                <span class="logo-text">ND AI 4-Year Planner</span>
+            </div>
+            <button class="nav-cta">Start Your Plan</button>
+        </header>
+
+        <main class="main">
+            <section class="hero">
+                <div class="hero-text">
+                    <h1>Your ND Journey. Powered by AI.</h1>
+                    <p>
+                        Using Notre Dame’s academic insights and intelligent planning tools, 
+                        this system helps incoming students build a personalized four-year roadmap 
+                        aligned with your goals, interests, and major.
+                    </p>
+                </div>
+
+                <form class="question-card">
+                    <h2>Tell us about your path</h2>
+
+                    <div class="field">
+                        <label for="major">What is your intended major?</label>
+                        <input
+                            type="text"
+                            id="major"
+                            name="major"
+                            placeholder="e.g. Computer Science, Economics, Undecided"
+                            required
+                        />
+                    </div>
+
+                    <div class="field">
+                        <label for="interests">What are your interests?</label>
+                        <textarea
+                            id="interests"
+                            name="interests"
+                            rows="3"
+                            placeholder="e.g. research, music, startups, social impact, study abroad"
+                            required
+                        ></textarea>
+                    </div>
+
+                    <div class="field">
+                        <label for="career">What is your goal career?</label>
+                        <input
+                            type="text"
+                            id="career"
+                            name="career"
+                            placeholder="e.g. software engineer, physician, product designer"
+                            required
+                        />
+                    </div>
+
+                    <button type="submit" class="primary-btn">Generate My ND Plan</button>
+
+                    <p class="disclaimer">
+                        Your answers help our AI create a personalized four-year roadmap. 
+                        You can revise everything later.
+                    </p>
+                </form>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
